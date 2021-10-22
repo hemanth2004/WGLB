@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>OmnicureLIVE</title>
+    <title>BrowserInBrowser</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  
   <body class="dark">
-    <p>LMAo</p>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
     </div>
@@ -27,15 +25,15 @@
     <script>
       const hideFullScreenButton = "true";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/WebGL.loader.js";
+      const loaderUrl = buildUrl + "/WGLB.loader.js";
       const config = {
-        dataUrl: buildUrl + "/WebGL.data",
-        frameworkUrl: buildUrl + "/WebGL.framework.js",
-        codeUrl: buildUrl + "/WebGL.wasm",
+        dataUrl: buildUrl + "/WGLB.data.br",
+        frameworkUrl: buildUrl + "/WGLB.framework.js.br",
+        codeUrl: buildUrl + "/WGLB.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "BaNW",
-        productName: "OmnicureLIVE",
-        productVersion: "0.1",
+        companyName: "DefaultCompany",
+        productName: "BrowserInBrowser",
+        productVersion: "1.0",
       };
 
       const container = document.querySelector("#unity-container");
